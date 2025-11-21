@@ -1,7 +1,7 @@
 
-*[首页](https://wujingkai-nsm.github.io/)* 
+[*[首页](https://wujingkai-nsm.github.io/)* ]
 <details>
-  <summary>计算机各大工具网址</summary
+  <summary>计算机各大工具网址</summary>
 - [Docker官方网站](https://www.docker.com/)
 - [Redis 官方网站](https://redis.io/)
 - [Java 官方网站](https://www.oracle.com/java/)
@@ -11,7 +11,7 @@
 </details>
 
 <details>
-  <summary>编程工具官方</summary
+  <summary>编程工具官方</summary>
 
 - [Vscode](https://code.visualstudio.com/)
 - [JetBrains Idea](https://www.jetbrains.com/)
