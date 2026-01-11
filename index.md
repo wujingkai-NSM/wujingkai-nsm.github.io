@@ -34,6 +34,23 @@
 - **微服务**
   - [微服务架构](architecture/microservices.md)
 
+### 🔹 AI与机器学习
+
+- **机器学习基础**
+  - [机器学习概念](machine-learning/concepts.md)
+  - [机器学习工作流](machine-learning/workflow.md)
+  - [Python机器学习库](machine-learning/python-libraries.md)
+  - [机器学习示例](machine-learning/examples.md)
+
+### 🔹 面试指南
+
+- [AI时代全栈开发面试指南](ai-era-fullstack-interview.md)
+
+### 🔹 资源链接
+
+- [常用链接工具](fav-links.md)
+- [PDF书籍](pdfs/index.md)
+
 ## 🎯 学习路径
 
 ### 基础阶段
