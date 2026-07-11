@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wujingkai-blog.org/sitemap.xml

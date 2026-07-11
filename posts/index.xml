@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 武静慨</title><link>https://wujingkai-blog.org/posts/</link><description>Recent content in Posts on 武静慨</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>© 2026 武静慨</copyright><lastBuildDate>Sat, 11 Jul 2026 15:58:20 +0800</lastBuildDate><atom:link href="https://wujingkai-blog.org/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>大模型的Temperature</title><link>https://wujingkai-blog.org/posts/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84temperature/</link><pubDate>Sat, 11 Jul 2026 15:58:20 +0800</pubDate><guid>https://wujingkai-blog.org/posts/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84temperature/</guid><description>&lt;h2 class="relative group"&gt;🌡️ 什么是 Temperature？
+ &lt;div id="-什么是-temperature" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-%e4%bb%80%e4%b9%88%e6%98%af-temperature" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;Temperature（温度）是大语言模型中的一个重要超参数，它控制着模型输出文本的&lt;strong&gt;随机性&lt;/strong&gt;和&lt;strong&gt;创造性&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;🎯 Temperature 的作用
+ &lt;div id="-temperature-的作用" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-temperature-%e7%9a%84%e4%bd%9c%e7%94%a8" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+
+&lt;h3 class="relative group"&gt;工作原理
+ &lt;div id="工作原理" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;在语言模型中，模型会为每个可能的输出 token 计算一个概率分布。Temperature 通过以下方式影响这个分布：&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; numpy &lt;span style="color:#66d9ef"&gt;as&lt;/span&gt; np
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;apply_temperature&lt;/span&gt;(logits, temperature):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# 应用温度缩放&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; scaled_logits &lt;span style="color:#f92672"&gt;=&lt;/span&gt; logits &lt;span style="color:#f92672"&gt;/&lt;/span&gt; temperature
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# 应用 softmax 得到概率分布&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; probabilities &lt;span style="color:#f92672"&gt;=&lt;/span&gt; np&lt;span style="color:#f92672"&gt;.&lt;/span&gt;exp(scaled_logits) &lt;span style="color:#f92672"&gt;/&lt;/span&gt; np&lt;span style="color:#f92672"&gt;.&lt;/span&gt;sum(np&lt;span style="color:#f92672"&gt;.&lt;/span&gt;exp(scaled_logits))
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; probabilities&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item></channel></rss>
